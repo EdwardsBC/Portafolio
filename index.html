@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ewah.V1</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/edwards.jpg" alt="">
+            </div>
+            <h1>EDWARDS BARBOZA</h1>
+            <h2>Software Developer - Back-end</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/Omar.Barboza.01/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Ewah_Tumblr"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/EdwardsBC"><i class="fa-brands fa-github"></i>
+                <a href="https://www.linkedin.com/in/edwards-barboza-caicay-a05083184/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://open.spotify.com/playlist/4DSYFteNzVYOlitByJXcpp?si=301a745afb2b42df"><i class="fa-brands fa-spotify"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Edwards Barboza.</span></p>
+            <p>Como desarrollador de sistemas de información e informática con más de 3 años de experiencia, me considero un profesional altamente eficiente y adaptable, con habilidades en la creación de bases de datos, programación en Visual Basic, Python, Java y en el manejo de SQL Server 2014. Además, me he desempeñado en liderar equipos de trabajo, brindando soluciones eficaces y eficientes a diferentes proyectos.</p>
+            <p> Entre mis logros más destacados, puedo mencionar el desarrollo de un proyecto para un minimarket, en el cual fuí el creador de una base de datos en SQL Server 2014, además lideré la elaboración de un proyecto laboral para un sindicato, teniendo como función principal el control y el historial de facturas. Por otro lado he logrado crear páginas web enfocadas en torneos para streamers que se han llevado a cabo con éxito.</p>
+            <p> Una de mis pasiones más grandes es el mundo de la programación y disfruto mantenerme actualizado en las últimas tendencias tecnológicas. Me motiva enfrentar nuevos desafíos y situaciones que me permitan aprender y crecer profesionalmente. Dentro de mi formación profesional cuento con certificaciones en JavaScript y SQL de SoloLearn, así como en cursos completados en ALURA ORACLE, y mi título técnico de desarrollador de sistemas.</p>
+            <p> Estoy interesado en empresas donde pueda desarrollar paginas web para juegos, torneos o eventos relacionados con streamers, donde pueda aprender todo lo posible y también pueda contribuir con mis conocimientos en sistemas para tiendas. Así como también poder trabajar con metodologías como SCRUM y MVC. Estoy interesado en empresas que me permitan crecer como profesional, en la cual gracias a la contribución de mis conocimientos pueda ser parte del desarrollo de páginas web de juegos.</p>
+            <p> Además de mi pasión por la programación, también disfruto creando datapacks para juegos como Minecraft y haciendo páginas web para torneos de League of Legends, así como trabajando en proyectos de backend.</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-01-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 984126704
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            M4pX_bc@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            Proximamente...
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Urb.Miraflores MnzE, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Software Developer</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                          <i class="fa-solid fa-code"></i>
+                            <span>CODIGO</span>
+                        </div>
+                        <div class="interes">
+                          <i class="fa-solid fa-video"></i>
+                            <span>EDICION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                          <i class="fa-solid fa-mug-hot"></i>
+                            <span>CAFE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>VisualBasic</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Sistemas de Información</h4>
+                        <span class="casa">INSTITUTO TECNOLÓGICO IDAT</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>Experiencia en creación de sistemas de información en Java, JS, Django y VisualBasic, así como en creación de bases de datos en SQLserver, PHP, MySQL y Oracle. Participación en feria de proyectos de programación en Arduino. Conocimiento en arquitectura Modelo Vista Controlador (MVC) y Modelo Vista Template (MVT), y conocimientos avanzados en programación en Excel (VisualBasic).</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingles</h4>
+                        <span class="casa">Centro De Idiomas SENATI</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>He completado mis estudios de inglés en SENATI, alcanzando el nivel básico 12 del idioma. Durante mi formación en SENATI, he aprendido habilidades importantes en comprensión auditiva, conversación, lectura y escritura en inglés. Esta experiencia me ha permitido comunicarme de manera efectiva en situaciones cotidianas, así como también en ambientes laborales donde se requiere conocimientos básicos del idioma. Estoy comprometido a seguir mejorando mis habilidades en inglés y adquirir mayores niveles de fluidez en el futuro.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Beca</h4>
+                        <span class="casa">Oracle Next Education</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>En la beca de Oracle Next Education, estoy adquiriendo habilidades en varias áreas importantes para el desarrollo de software. Aprendiendo sobre la lógica de programación, que es fundamental para la creación de soluciones efectivas. Además, poder adquirir conocimientos en el desarrollo de aplicaciones tanto en el Front-end, que se enfoca en la parte visual de las aplicaciones, como en el Back-end, que se enfoca en la parte funcional y de procesamiento de datos. Finalmente, también estoy adquiriendo habilidades en emprendimiento, lo que te permitirá comprender mejor cómo llevar tus ideas de software al mercado y crear soluciones que sean rentables y exitosas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Administrador de Sistemas</h4>
+                        <span class="casa">D&C Mantenimiento industrial</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Fui responsable del sistema "DEFONTANA ERP" para la gestión de documentos y cambio de moneda en la empresa, capacitando al personal en su uso. También resolví problemas de documentación y realicé tareas de toma de cotizaciones y notas de compra. Desarrollé programas en VisualBasic para Hojas de cálculo de Excel.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo de Sistema</h4>
+                        <span class="casa">SUTRAKOMAQ</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Desarrollo completo de un sistema enfocado en la gestión de documentos y asociados. Realización de análisis, entrevistas con los stakeholders, creación de base de datos, diagramas de flujo y diagrama de base de datos utilizando Visual Studio 2019, SQLserver 2014 Express y VISIO de Microsoft Office. Proyecto final entregado en 2 meses, instalación y funcionamiento en 1 semana. Implementación de medidas de seguridad con credenciales de usuario y contraseña. El sistema permite exportaciones de data interna en Excel y PDF.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador de Software - Junior</h4>
+                        <span class="casa">INFOPLUS</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollando la continuación de un sistema web en Django para una ferretería, con funcionalidades de código de barras e impresión de boletas y facturas. Además, he continuado el desarrollo de otro sistema de ferretería en Visual Studio 2019, usando arquitectura MVC, y he creado una aplicación con PySimpleGUI y base de datos SQL (Navicat).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo Widget</h3>
+                        <p>Para Steamers</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SoloQChallenge</h3>
+                        <p>Pagina de Torneos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Datapacks</h3>
+                        <p>Eventos para juegos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Chappy</h3>
+                        <p>Bot de trabajo automatizado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>HOST</h3>
+                        <p>Administración para servidores</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Pagina web de Boletas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Chiclayo-Pomalca
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +51984126704
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                M4pX_bc@hotmil.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+          <a href="https://www.facebook.com/Omar.Barboza.01/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Ewah_Tumblr"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/EdwardsBC"><i class="fa-brands fa-github"></i>
+          <a href="https://www.linkedin.com/in/edwards-barboza-caicay-a05083184/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://open.spotify.com/playlist/4DSYFteNzVYOlitByJXcpp?si=301a745afb2b42df"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
