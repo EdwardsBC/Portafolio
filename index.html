@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
@@ -31,11 +30,10 @@
         </header>
     </div>
 
-    <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/edwardsblanco.png.png" alt="">
+                <img src="img/edwardsblanco.png" alt="">
             </div>
             <h1>EDWARDS BARBOZA</h1>
             <h2>Software Developer</h2>
@@ -49,7 +47,6 @@
         </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
@@ -61,7 +58,6 @@
             <p> Estoy en la búsqueda de empresas que fomenten el desarrollo continuo de habilidades, donde pueda aportar mis conocimientos y compromiso total. Me interesa particularmente trabajar en ambientes que adopten metodologías y una evaluacion previa para inicial el proyecto lo que considero esencial para la gestión eficaz de proyectos. Mi aspiración es integrarme en organizaciones que valoren el crecimiento profesional y ofrezcan la oportunidad de contribuir en la concepción y ejecución exitosa de nuevos proyectos. Me atraen los retos que impulsan la superación personal y la innovación; y valoro entornos de trabajo donde, junto a un equipo colaborativo, podamos debatir soluciones y estrategias para avanzar en los proyectos, superando los desafíos que se presenten.</p>
             <p> Además de mi pasión por la programación, también disfruto creando datapacks para juegos como Minecraft y haciendo páginas web para torneos de League of Legends.</p>
             <div class="fila">
-                <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
                     <ul>
@@ -92,7 +88,6 @@
                     </ul>
                 </div>
 
-                <!-- intereses -->
                 <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
@@ -139,29 +134,25 @@
 
             <script>
                 document.getElementById("btnDescargarCV").addEventListener("click", function() {
-                    // Ruta del archivo PDF
+
                     const rutaPDF = "doc/Curriculum Vitae.pdf";
 
-                    // Crea un enlace temporal
                     const link = document.createElement("a");
                     link.href = rutaPDF;
 
-                    // Establece el nombre del archivo que se descargará
                     link.download = "CV_EdwardsBarboza_Tecnico_Desarrollador.pdf";
 
-                    // Simula un clic en el enlace para iniciar la descarga
                     link.click();
                 });
             </script>
         </div>
     </section>
 
-    <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Skills</h2>
             <div class="fila">
-                <!-- Technical Skill -->
+
                 <div class="col">
                     <h3>Habilidades técnicas</h3>
                     <div class="skill">
@@ -205,7 +196,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Professional Skills -->
                 <div class="col">
                     <h3>Habilidades profesionales</h3>
                     <div class="skill">
@@ -253,7 +243,6 @@
         </div>
     </section>
 
-    <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
@@ -341,7 +330,6 @@
         </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>Certificados</h2>
@@ -413,7 +401,6 @@
         </div>
     </section>
 
-    <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
@@ -425,21 +412,17 @@
                 
                 <script>
                     document.getElementById("btnEnviarMensaje").addEventListener("click", function() {
-                        // URL del enlace de WhatsApp
                         const urlWhatsApp = "https://wa.me/+51984126704";
                 
-                        // Redireccionar a la página de WhatsApp
                         window.location.href = urlWhatsApp;
                     });
                 </script>
                 </div>
-                <!-- Mapa -->
 
             </div>
         </div>
     </section>
 
-    <!-- footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
